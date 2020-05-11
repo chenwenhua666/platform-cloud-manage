@@ -73,7 +73,10 @@ export default {
         { img: 'tencent_cloud.png', name: 'tencent_cloud', bind: false, radius: true },
         { img: 'qq.png', name: 'qq', bind: false, radius: false },
         { img: 'dingtalk.png', name: 'dingtalk', bind: false, radius: true },
-        { img: 'microsoft.png', name: 'microsoft', bind: false, radius: false }
+        { img: 'microsoft.png', name: 'microsoft', bind: false, radius: false },
+        { img: 'weibo.png', name: 'weibo', radius: true },
+        { img: 'wechat.png', name: 'wechat', radius: false },
+        { img: 'douyin.png', name: 'douyin', radius: false }
       ],
       oauthType: '',
       page: {

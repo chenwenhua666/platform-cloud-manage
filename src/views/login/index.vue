@@ -161,7 +161,10 @@ export default {
         { img: 'tencent_cloud.png', name: 'tencent_cloud', radius: true },
         { img: 'qq.png', name: 'qq', radius: false },
         { img: 'dingtalk.png', name: 'dingtalk', radius: true },
-        { img: 'microsoft.png', name: 'microsoft', radius: false }
+        { img: 'microsoft.png', name: 'microsoft', radius: false },
+        { img: 'weibo.png', name: 'weibo', radius: true },
+        { img: 'wechat.png', name: 'wechat', radius: false },
+        { img: 'douyin.png', name: 'douyin', radius: false }
       ],
       loginForm: {
         username: '',
@@ -251,7 +254,7 @@ export default {
         that.login.type = 'bind'
         const authUser = data.data
         that.authUser = authUser
-        that.$confirm(that.$t('common.current') + authUser.source + that.$t('common.socialAccount') + authUser.nickname + that.$t('common.socialTips'), that.$t('common.tips'), {
+        that.$confirm(that.$t('common.current') + authUser.source + that.$t('common.socialAccount') + authUser.username + that.$t('common.socialTips'), that.$t('common.tips'), {
           confirmButtonText: that.$t('common.signLogin'),
           cancelButtonText: that.$t('common.bindLogin'),
           type: 'warning'

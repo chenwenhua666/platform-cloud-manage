@@ -4,8 +4,8 @@ module.exports = {
   authorizationValue: 'Basic cGxhdGZvcm06MTIzNDU2YV8=',
 
   // 社交登录后台地址
-  socialLoginUrl: 'http://localhost:8301/auth/social/login',
-  // 请替换为您的实际地址
+  socialLoginUrl: 'http://cloud.cwh.com:8301/auth/social/login',
+
   pages: {
     // sb-Admin 控制台地址
     springBootAdminUrl: 'http://localhost:8401/login',
