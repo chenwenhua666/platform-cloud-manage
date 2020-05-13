@@ -12,9 +12,7 @@
         <el-input v-model="user.username" :readonly="user.userId === '' ? false : 'readonly'" />
       </el-form-item>
       <el-form-item v-show="user.userId === ''" :label="$t('table.user.password')" prop="password">
-        <el-tooltip class="item" effect="dark" :content="$t('tips.defaultPassword')" placement="top-start">
-          <el-input value="1234qwer" type="password" readonly />
-        </el-tooltip>
+        <el-input v-model="user.password" type="password" />
       </el-form-item>
       <el-form-item :label="$t('table.user.email')" prop="email">
         <el-input v-model="user.email" />
@@ -125,6 +123,10 @@ export default {
             }
           }, trigger: 'blur' }
         ],
+        password: [
+          { required: true, message: this.$t('rules.require'), trigger: 'blur' },
+          { min: 6, max: 20, message: this.$t('rules.range6to20'), trigger: 'blur' }
+        ],
         email: { type: 'email', message: this.$t('rules.email'), trigger: 'blur' },
         mobile: { validator: (rule, value, callback) => {
           if (value !== '' && !validMobile(value)) {
@@ -164,7 +166,7 @@ export default {
       return {
         userId: '',
         username: '',
-        password: '1234qwer',
+        password: '',
         email: '',
         mobile: '',
         sex: '',

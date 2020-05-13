@@ -70,12 +70,9 @@ export default {
       logo: [
         { img: 'gitee.png', name: 'gitee', bind: false, radius: true },
         { img: 'github.png', name: 'github', bind: false, radius: true },
-        { img: 'tencent_cloud.png', name: 'tencent_cloud', bind: false, radius: true },
         { img: 'qq.png', name: 'qq', bind: false, radius: false },
-        { img: 'dingtalk.png', name: 'dingtalk', bind: false, radius: true },
-        { img: 'microsoft.png', name: 'microsoft', bind: false, radius: false },
-        { img: 'weibo.png', name: 'weibo', radius: true },
         { img: 'wechat.png', name: 'wechat', radius: false },
+        { img: 'weibo.png', name: 'weibo', radius: true },
         { img: 'douyin.png', name: 'douyin', radius: false }
       ],
       oauthType: '',
