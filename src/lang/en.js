@@ -223,6 +223,27 @@ export default {
       title: 'Gateway Certification',
       login: 'Login'
     },
+    mail: {
+      title: 'MailTitle',
+      receiver: 'MailAddress',
+      send: 'SendMail',
+      atLeast: 'at lease one mail address',
+      require: 'mail address is empty',
+      success: 'send successfully',
+      fail: 'send failed',
+      content: 'SendContent',
+      validation: 'Validate Email',
+      getCode: 'Get Code',
+      sending: 'CodeSending',
+      validity: 'Send successfully,validation code valid for 5 minutes',
+      later: 'seconds later resend',
+      resend: 'resend'
+    },
+    report: {
+      private: 'Report',
+      download: 'DownloadReport',
+      view: 'ViewReport'
+    },
     refresh: 'Refresh',
     operation: 'Operation',
     search: 'Search',
@@ -329,6 +350,9 @@ export default {
     no: 'No',
     open: 'Open',
     close: 'Close',
+    upload: 'upload',
+    ClickUpload: 'ClickUpload',
+    download: 'download',
     sex: {
       male: 'Male',
       female: 'Female',

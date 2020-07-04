@@ -17,6 +17,9 @@
               <el-tab-pane :label="$t('common.password')" name="password">
                 <password />
               </el-tab-pane>
+              <el-tab-pane :label="$t('table.report.private')" name="report">
+                <report :user="user" />
+              </el-tab-pane>
             </el-tabs>
           </el-card>
         </el-col>
@@ -30,10 +33,11 @@ import UserCard from './components/UserCard'
 import Password from './components/Password'
 import Timeline from './components/Timeline'
 import Account from './components/Account'
+import Report from './components/Report'
 
 export default {
   name: 'Profile',
-  components: { UserCard, Password, Timeline, Account },
+  components: { UserCard, Password, Timeline, Account, Report },
   data() {
     return {
       activeTab: ''

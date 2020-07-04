@@ -223,6 +223,27 @@ export default {
       title: '网关管理认证',
       login: '认证'
     },
+    mail: {
+      title: '邮件标题',
+      receiver: '收件地址',
+      send: '发送邮件',
+      atLeast: '请至少保留一个有效地址',
+      require: '收件邮箱不能为空',
+      success: '发送成功',
+      fail: '发送失败',
+      content: '发送内容',
+      validation: '邮箱验证',
+      getCode: '获取验证码',
+      sending: '验证码发送中',
+      validity: '发送成功，验证码有效期5分钟',
+      later: '秒后重新发送',
+      resend: '重新发送'
+    },
+    report: {
+      private: '个人报告',
+      download: '下载报告',
+      view: '预览报告'
+    },
     refresh: '刷新',
     operation: '操作',
     search: '搜索',
@@ -326,6 +347,9 @@ export default {
     no: '否',
     open: '开启',
     close: '关闭',
+    upload: '上传',
+    ClickUpload: '点击上传',
+    download: '下载',
     sex: {
       male: '男性',
       female: '女性',

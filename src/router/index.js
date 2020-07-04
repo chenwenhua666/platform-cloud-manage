@@ -75,6 +75,11 @@ const constRouter = [
         meta: { title: 'page404', noCache: true }
       }
     ]
+  },
+  {
+    path: '/pdf/view',
+    component: (resolve) => require(['@/views/platform/pdf/view'], resolve),
+    hidden: true
   }
 ]
 

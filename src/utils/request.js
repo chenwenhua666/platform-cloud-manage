@@ -99,6 +99,12 @@ service.interceptors.response.use((config) => {
               router.push('/login')
             }
           })
+        } else if (errorMessage === undefined) {
+          Message({
+            message: '验证失败',
+            type: 'error',
+            duration: messageDuration
+          })
         } else {
           Message({
             message: errorMessage,
