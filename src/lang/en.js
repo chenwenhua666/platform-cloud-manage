@@ -244,6 +244,12 @@ export default {
       download: 'DownloadReport',
       view: 'ViewReport'
     },
+    sql: {
+      datasource: 'DataSource:',
+      run: 'Run',
+      format: 'format SQL',
+      enter: 'Please enter the SQL to execute here'
+    },
     refresh: 'Refresh',
     operation: 'Operation',
     search: 'Search',

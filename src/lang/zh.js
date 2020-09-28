@@ -244,6 +244,12 @@ export default {
       download: '下载报告',
       view: '预览报告'
     },
+    sql: {
+      datasource: '数据源：',
+      run: '执行',
+      format: '格式化SQL',
+      enter: '请在此输入要执行的SQL'
+    },
     refresh: '刷新',
     operation: '操作',
     search: '搜索',
